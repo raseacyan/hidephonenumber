@@ -87,9 +87,15 @@ const myanmarNumbers = {
 		}
 		
 
-		const description = "မြန်မာ +၉၅၉၇၈၄၁၂၃၄၅၆, ၀၉-၇၈၄၁၂၃၄၅၆, (၀၉)၇၈၄၁၂၃၄၅၆, ၀၉၇၈၄၁၂၃၄၅၆, ၇၈၄၁၂၃၄၅၆ English +95978412456, 09-784123456, (09)784123456, 784123456";	
-		
+		const description = "မြန်မာ +၉၅၉၇၈၄၁၂၃၄၅၆, ၀၉-၇၈၄၁၂၃၄၅၆, (၀၉)၇၈၄၁၂၃၄၅၆, ၀၉၇၈၄၁၂၃၄၅၆, ၇၈၄၁၂၃၄၅၆ English +95978412456, 09-784123456, (09)784123456, 784123456";		
 		
 		const newDescription  = description.split(" ").map((item)=> normalizeInput(item)).join(" ");
 		
-		console.log(replacePhoneNumber(newDescription));	
+		console.log(replacePhoneNumber(newDescription));
+
+		const description2 = "မြန်မာ မြန်မာ English English";
+
+		
+		const newDescription2  = description2.split(" ").map((item)=> normalizeInput(item)).join(" ");
+		
+		console.log(replacePhoneNumber(newDescription2));	
